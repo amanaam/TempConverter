@@ -53,4 +53,10 @@ class TempConverter {
     }
   }
   
+  func toggleUnits() {
+    let a = tempUnits
+    tempUnits = newUnits
+    newUnits = a
+  }
+  
 }

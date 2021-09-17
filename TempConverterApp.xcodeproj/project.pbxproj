@@ -16,6 +16,7 @@
 		04BA3E8D26F158AE007A0625 /* TempConverterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3E8C26F158AE007A0625 /* TempConverterAppTests.swift */; };
 		04BA3E9826F158AE007A0625 /* TempConverterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3E9726F158AE007A0625 /* TempConverterAppUITests.swift */; };
 		04BA3EA926F15C4D007A0625 /* TempConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3EA826F15C4D007A0625 /* TempConverter.swift */; };
+		04FAA66226F40C5A00D90455 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAA66126F40C5A00D90455 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		04BA3E9726F158AE007A0625 /* TempConverterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterAppUITests.swift; sourceTree = "<group>"; };
 		04BA3E9926F158AE007A0625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BA3EA826F15C4D007A0625 /* TempConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverter.swift; sourceTree = "<group>"; };
+		04FAA66126F40C5A00D90455 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				04BA3E8026F158AE007A0625 /* LaunchScreen.storyboard */,
 				04BA3E8326F158AE007A0625 /* Info.plist */,
 				04BA3EA826F15C4D007A0625 /* TempConverter.swift */,
+				04FAA66126F40C5A00D90455 /* AboutViewController.swift */,
 			);
 			path = TempConverterApp;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				04BA3EA926F15C4D007A0625 /* TempConverter.swift in Sources */,
 				04BA3E7A26F158AD007A0625 /* ViewController.swift in Sources */,
 				04BA3E7626F158AD007A0625 /* AppDelegate.swift in Sources */,
+				04FAA66226F40C5A00D90455 /* AboutViewController.swift in Sources */,
 				04BA3E7826F158AD007A0625 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

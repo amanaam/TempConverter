@@ -7,24 +7,45 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
   let tempConverter = TempConverter()
   @IBOutlet weak var inputTempLabel: UILabel!
   @IBOutlet weak var outputTempLabel: UILabel!
   @IBOutlet weak var inputTemp: UITextField!
+  @IBOutlet weak var outputTemp: UILabel!
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    inputTemp.text = "--"
+    inputTemp.text? = "--"
+    self.inputTemp.delegate = self
+  }
+  @IBAction func switchChanged() {
+    tempConverter.toggleUnits()
+    updateLabels()
+  }
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    inputTemp.resignFirstResponder()
+    return true
+  }
+  @IBAction func converter(){
+    let userData:String = inputTemp.text!
+
+    if (userData == "") {
+      tempConverter.inputTemp = -500
+    }
+    if let temp=Int(userData){
+      tempConverter.inputTemp = temp
+      outputTemp.text = String(tempConverter.convert(temp: temp))
+    }
+    else {
+      tempConverter.inputTemp = -500
+    }
   }
   
-  func updateLabels(<#parameters#>) -> <#return type#> {
-    <#function body#>
-  }
-  
-  func updateDisplay(<#parameters#>) -> <#return type#> {
-    <#function body#>
+  private func updateLabels() {
+    outputTempLabel.text = tempConverter.newUnits
+    inputTempLabel.text = tempConverter.tempUnits
   }
   
   
